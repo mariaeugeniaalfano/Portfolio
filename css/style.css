@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../img/stacked-peaks-haikei.png);
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+}
+body main {
+  max-width: 1300px;
+  margin: auto;
+}
+body header ul {
+  background-color: #007560;
+  text-align: center;
+}
+body header ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px 0 10px;
+}
+body header ul li .fa-brands {
+  font-size: 30px;
+  color: #f7f5dd;
+  margin-right: 30px;
+}
+body header ul li .fa-brands:hover {
+  color: #9bdeac;
+}
+body .infoPersonal {
+  margin: 0 20px 0 20px;
+  justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+body .infoPersonal .infoPersonal__img {
+  flex-direction: row;
+}
+body .infoPersonal .infoPersonal__img img {
+  border-radius: 100%;
+}
+body .infoConocimiento {
+  padding: 40px;
+  text-align: center;
+}
+body .infoConocimiento .texto {
+  font-size: 1.5rem;
+}
+body .infoConocimiento .color {
+  color: #007560;
+}
+body .carousel-item img {
+  margin: 50px 0 20px 0;
+  width: 100vw;
+  height: 500px;
+}
+
+.proyecto {
+  border-top: 2px dotted #007560;
+  border-bottom: 2px dotted #007560;
+  margin-top: 50px;
+}
+.proyecto h2 {
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.footer {
+  background-color: #007560;
+  color: #f7f5dd;
+  text-align: center;
+  padding-top: 10px;
+  height: 50px;
+}
+
+/*# sourceMappingURL=style.css.map */
