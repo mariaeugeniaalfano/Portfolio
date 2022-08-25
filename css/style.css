@@ -54,20 +54,30 @@ body .infoConocimiento .texto {
 body .infoConocimiento .color {
   color: #007560;
 }
+body h3 {
+  margin-top: 10px;
+}
 body .carousel-item img {
-  margin: 50px 0 20px 0;
+  margin: 10px 0 20px 0;
   width: 100vw;
   height: 500px;
 }
 
-.proyecto {
+.proyecto, .estudios {
   border-top: 2px dotted #007560;
   border-bottom: 2px dotted #007560;
   margin-top: 50px;
 }
-.proyecto h2 {
+.proyecto h2, .estudios h2 {
   font-weight: bold;
   margin-top: 15px;
+}
+
+.estudios .card {
+  margin: 10px;
+}
+.estudios .card img {
+  height: 100px;
 }
 
 .footer {

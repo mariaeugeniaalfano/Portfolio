@@ -63,8 +63,12 @@ body {
       color: #007560;
     }
   }
+
+  h3 {
+    margin-top: 10px;
+  }
   .carousel-item img {
-    margin: 50px 0 20px 0;
+    margin: 10px 0 20px 0;
     width: 100vw;
     height: 500px;
   }
@@ -77,6 +81,15 @@ body {
   h2 {
     font-weight: bold;
     margin-top: 15px;
+  }
+}
+.estudios {
+  @extend .proyecto;
+  .card {
+    margin: 10px;
+    img {
+      height: 100px;
+    }
   }
 }
 
