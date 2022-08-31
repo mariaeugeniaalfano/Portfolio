@@ -40,37 +40,28 @@
   padding: 40px;
   text-align: center;
 }
+.infoConocimiento h3 {
+  margin-top: 10px;
+}
 .infoConocimiento .texto {
   font-size: 1.5rem;
 }
 .infoConocimiento .color {
   color: #007560;
 }
-
-h3 {
-  margin-top: 10px;
-}
-
-.carousel-item img {
-  margin: 10px 0 20px 0;
-  width: 300px;
-  height: 200px;
-}
-
-@media screen and (min-width: 576px) {
-  .carousel-item img {
-    width: 800px;
-    height: 500px;
-  }
-}
-.proyecto, .estudios {
+.infoConocimiento .proyecto, .infoConocimiento .estudios {
   border-top: 2px dotted #007560;
   border-bottom: 2px dotted #007560;
   margin-top: 50px;
 }
-.proyecto h2, .estudios h2 {
+.infoConocimiento .proyecto h2, .infoConocimiento .estudios h2 {
   font-weight: bold;
   margin-top: 15px;
+}
+.infoConocimiento .carousel-item img {
+  margin: 10px 0 20px 0;
+  width: 300px;
+  height: 200px;
 }
 
 .estudios .card {
@@ -123,13 +114,6 @@ h3 {
   padding: 20px;
 }
 
-@media screen and (min-width: 576px) {
-  .certificados img {
-    width: 500px;
-    height: 500px;
-    padding: 20px;
-  }
-}
 body {
   background-image: url(../img/stacked-peaks-haikei.png);
   background-attachment: fixed;
@@ -156,6 +140,18 @@ body main {
 }
 .fa-envelope:hover {
   color: #9bdeac;
+}
+
+@media screen and (min-width: 576px) {
+  .carousel-inner .carousel-item img {
+    width: 800px;
+    height: 500px;
+  }
+  .certificados img {
+    width: 500px;
+    height: 500px;
+    padding: 20px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

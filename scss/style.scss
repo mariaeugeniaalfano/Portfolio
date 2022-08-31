@@ -6,6 +6,7 @@
 
 @import "home";
 @import "certificados";
+@import "variable";
 
 
 body {
@@ -23,19 +24,39 @@ body {
 
 
 .footer {
-  background-color: #007560;
-  color: #f7f5dd;
-  text-align: center;
+  background-color: map-get($estilo, verdeOscuro);
+  color: map-get($estilo, pastel);
+  text-align: map-get($estilo, centro);
   padding: 10px;
   height: auto;
 }
 
 .fa-envelope {
   font-size: 20px;
-  color: #f7f5dd;
+  color: map-get($estilo, pastel);
   margin-right: 30px;
 
   &:hover {
-    color: #9bdeac;
+    color: map-get($estilo, verdeClaro);
+  }
+}
+
+//MEDIAQ
+
+@media screen and (min-width: 576px) {
+  .carousel-inner {
+    .carousel-item img {
+
+      @include sizes(800px, 500px);
+
+    }
+
+  }
+
+  .certificados img {
+
+    @include sizes(500px, 500px);
+    padding: 20px;
+
   }
 }

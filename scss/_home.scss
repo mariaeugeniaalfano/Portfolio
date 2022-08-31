@@ -1,7 +1,9 @@
+@import "variable";
+
 .header_home {
     ul {
         background-color: #007560;
-        text-align: center;
+        text-align: map-get($estilo , centro);
 
         li {
             list-style: none;
@@ -10,11 +12,11 @@
 
             .fa-brands {
                 font-size: 30px;
-                color: #f7f5dd;
+                color: map-get($estilo , pastel);
                 margin-right: 30px;
 
                 &:hover {
-                    color: #9bdeac;
+                    color: map-get($estilo , verdeClaro);
                 }
 
             }
@@ -22,15 +24,14 @@
     }
 }
 
-
-
+//Informacion personal + foto
 
 .infoPersonal {
     margin: 0 20px 0 20px;
     justify-content: space-around;
     display: flex;
     flex-wrap: wrap;
-    text-align: center;
+    text-align: map-get($estilo, centro);
 
     .infoPersonal__img {
         flex-direction: row;
@@ -41,47 +42,45 @@
     }
 }
 
+// proyecto, certificados, stack
 .infoConocimiento {
+    h3 {
+        margin-top: 10px;
+    }
+
     padding: 40px;
-    text-align: center;
+    text-align: map-get($estilo, centro);
 
     .texto {
         font-size: 1.5rem;
     }
 
     .color {
-        color: #007560;
+        color: map-get($estilo, verdeOscuro);
+    }
+
+    .proyecto {
+        border-top: 2px dotted #007560;
+        border-bottom: 2px dotted #007560;
+        margin-top: 50px;
+
+        h2 {
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+    }
+
+    .carousel-item img {
+        margin: 10px 0 20px 0;
+        @include sizes (300px, 200px);
+
     }
 }
 
-h3 {
-    margin-top: 10px;
-}
-
-.carousel-item img {
-    margin: 10px 0 20px 0;
-    width: 300px;
-    height: 200px;
-}
-@media screen and (min-width: 576px){
-    .carousel-item img{
-        width: 800px;
-        height: 500px;
-    }
-}
 
 
-.proyecto {
-    border-top: 2px dotted #007560;
-    border-bottom: 2px dotted #007560;
-    margin-top: 50px;
 
-    h2 {
-        font-weight: bold;
-        margin-top: 15px;
-    }
-
-}
 
 
 .estudios {
@@ -96,7 +95,7 @@ h3 {
     }
 }
 
-.stack{
+.stack {
     border-top: 2px dotted #007560;
     border-bottom: 2px dotted #007560;
     margin-top: 50px;
@@ -107,9 +106,10 @@ h3 {
         margin-top: 15px;
     }
 
-    ol{
+    ol {
         padding-bottom: 30px;
-        i{
+
+        i {
             font-size: 40px;
             color: #007560;
         }

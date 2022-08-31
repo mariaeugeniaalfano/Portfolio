@@ -1,3 +1,5 @@
+@import "variable";
+
 .header_certificados {
     li {
         background-color: #007560;
@@ -19,23 +21,12 @@
 }
 
 .certificados {
-    text-align: center;
+    text-align: map-get($estilo, centro );
     margin: 50px;
 
     img {
-        width: 300px;
-        height: 200px;
+        @include sizes (300px, 200px);
         padding: 20px;
     }
 }
 
-@media screen and (min-width: 576px) {
-    .certificados {
-
-        img {
-            width: 500px;
-            height: 500px;
-            padding: 20px;
-        }
-    }
-}

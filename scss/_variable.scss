@@ -1,0 +1,11 @@
+$estilo: (
+    verdeOscuro: #007560,
+    verdeClaro: #9bdeac,
+    pastel: #f7f5dd,
+    centro: center,
+);
+
+@mixin sizes ($width, $heigth){
+    width: $width;
+    height: $heigth;
+}
