@@ -1,0 +1,31 @@
+.header_certificados {
+    li {
+        background-color: #007560;
+        text-align: center;
+        list-style: none;
+        padding: 10px 0 10px;
+
+        .fa-solid {
+            font-size: 20px;
+            color: #f7f5dd;
+            margin-right: 30px;
+
+            &:hover {
+                color: #9bdeac;
+            }
+
+        }
+    }
+}
+
+.certificados {
+    text-align: center;
+    margin: 50px;
+
+    img {
+        width: 500px;
+        height: 500px;
+
+        padding: 20px;
+    }
+}

@@ -1,0 +1,91 @@
+.header_home {
+    ul {
+        background-color: #007560;
+        text-align: center;
+
+        li {
+            list-style: none;
+            display: inline-block;
+            padding: 10px 0 10px;
+
+            .fa-brands {
+                font-size: 30px;
+                color: #f7f5dd;
+                margin-right: 30px;
+
+                &:hover {
+                    color: #9bdeac;
+                }
+
+            }
+        }
+    }
+}
+
+
+
+
+.infoPersonal {
+    margin: 0 20px 0 20px;
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+
+    .infoPersonal__img {
+        flex-direction: row;
+
+        img {
+            border-radius: 100%;
+        }
+    }
+}
+
+.infoConocimiento {
+    padding: 40px;
+    text-align: center;
+
+    .texto {
+        font-size: 1.5rem;
+    }
+
+    .color {
+        color: #007560;
+    }
+}
+
+h3 {
+    margin-top: 10px;
+}
+
+.carousel-item img {
+    margin: 10px 0 20px 0;
+    width: 100vw;
+    height: 500px;
+}
+
+
+
+.proyecto {
+    border-top: 2px dotted #007560;
+    border-bottom: 2px dotted #007560;
+    margin-top: 50px;
+
+    h2 {
+        font-weight: bold;
+        margin-top: 15px;
+    }
+
+}
+
+.estudios {
+    @extend .proyecto;
+
+    .card {
+        margin: 10px;
+
+        img {
+            height: 100px;
+        }
+    }
+}
