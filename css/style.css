@@ -94,11 +94,18 @@ h3 {
   margin: 50px;
 }
 .certificados img {
-  width: 500px;
-  height: 500px;
+  width: 300px;
+  height: 200px;
   padding: 20px;
 }
 
+@media screen and (min-width: 576px) {
+  .certificados img {
+    width: 500px;
+    height: 500px;
+    padding: 20px;
+  }
+}
 body {
   background-image: url(../img/stacked-peaks-haikei.png);
   background-attachment: fixed;
