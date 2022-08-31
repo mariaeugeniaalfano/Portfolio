@@ -74,6 +74,24 @@ h3 {
   height: 100px;
 }
 
+.stack {
+  border-top: 2px dotted #007560;
+  border-bottom: 2px dotted #007560;
+  margin-top: 50px;
+}
+.stack h2 {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 15px;
+}
+.stack ol {
+  padding-bottom: 30px;
+}
+.stack ol i {
+  font-size: 40px;
+  color: #007560;
+}
+
 .header_certificados li {
   background-color: #007560;
   text-align: center;
